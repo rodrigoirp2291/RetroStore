@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artículos | RetroStore</title>
+    <!-- Links de Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">RetroStore</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="articulos.html"
+                  >Artículos</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="cursos.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      ><strong>Ver todos los cursos</strong></a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Mantenimiento de Consolas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Electrónica básica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Restauración y personalización</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Detector de fallas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="cursos.html"
+                      >Asesoría personalizada</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rastreo.html">Rastreo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+      <h1 class="mb-4 d-flex align-items-center gap-2">Artículos</h1>
+      <p class="lead mb-5">
+        Explora nuestra exclusiva colección de artículos retro: consolas
+        clásicas, controles originales, cartuchos legendarios y accesorios
+        únicos para coleccionistas y fanáticos del pixel. Desde la mítica Super
+        Nintendo hasta la inolvidable Sega Genesis, revive la magia de los 80s y
+        90s como si fuera ayer. Ya sea que busques restaurar tu consola favorita
+        o descubrir títulos que definieron una era, este es tu lugar.
+      </p>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-0qox9d.jpg"
+              class="card-img-top"
+              alt="NES Classic"
+            />
+            <div class="card-body">
+              <h5 class="card-title">NES Classic</h5>
+              <p class="card-text">
+                La consola que lo inició todo. ¡Revive los 80s!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-2ewddy.jpg"
+              class="card-img-top"
+              alt="Game Boy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Game Boy</h5>
+              <p class="card-text">
+                Portabilidad y diversión en la palma de tu mano.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-4gjkme.jpg"
+              class="card-img-top"
+              alt="Colección Sega"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Colección Sega</h5>
+              <p class="card-text">
+                Juegos y consolas icónicas de la era dorada de Sega.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-4v1oo5.jpg"
+              class="card-img-top"
+              alt="Super Nintendo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Nintendo</h5>
+              <p class="card-text">
+                Diversión y nostalgia en 16 bits. ¡Colecciónala!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-48ymvo.jpg"
+              class="card-img-top"
+              alt="Accesorios Retro"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Accesorios Retro</h5>
+              <p class="card-text">
+                Mandos, cables y extras para tu experiencia retro.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/img/wallhaven-498g6k.png"
+              class="card-img-top"
+              alt="Cartuchos Legendarios"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cartuchos Legendarios</h5>
+              <p class="card-text">
+                Títulos clásicos para todas las generaciones.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 id="titulo_contacto">Contacto</h2>
+            <p>
+              ¿Tienes preguntas? Ponte en contacto con nosotros
+              <a href="contacto.html" class="text-warning">AQUÍ</a>
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <p class="mb-0">2025 RetroStore. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

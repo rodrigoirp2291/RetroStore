@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RetroStore</title>
+    <!-- Links de Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Barra de Navegación -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">RetroStore</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/articulos.html">Artículos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="Pages/cursos.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Cursos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html"
+                      ><strong>Ver todos los cursos</strong></a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html"
+                      >Mantenimiento de Consolas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html"
+                      >Electrónica básica</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html">
+                      Restauración y personalización</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html">
+                      Detector de fallas</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Pages/cursos.html">
+                      Asesoría personalizada</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/rastreo.html">Rastreo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main class="container my-5">
+      <div class="row align-items-center mb-5">
+        <div class="col-md-7">
+          <h1 class="display-4 fw-bold mb-3 d-flex align-items-center gap-2">
+            Bienvenido a RetroStore
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="36"
+              height="36"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M3 9l1-4h16l1 4" />
+              <path d="M5 9v10h14V9" />
+              <path d="M9 22V12h6v10" />
+            </svg>
+          </h1>
+          <p class="lead">
+            ¡Tu tienda de nostalgia, tecnología y cultura retro!
+          </p>
+        </div>
+        <div class="col-md-5 text-center">
+          <img
+            src="assets/img/tienda.png"
+            class="img-fluid rounded shadow"
+            alt="RetroStore tienda"
+          />
+        </div>
+      </div>
+
+      <section class="servicios bg-light p-4 rounded-4 mb-5">
+        <h2 class="mb-4">🔧 Nuestros Servicios</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col d-flex">
+            <div class="bg-white p-3 rounded-3 shadow flex-fill">
+              <h5>✅ Reparación y mantenimiento</h5>
+              <p>Consolas clásicas (NES, SNES, Sega, PlayStation, etc.)</p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="bg-white p-3 rounded-3 shadow flex-fill">
+              <h5>🕹️ Modificación y mejora</h5>
+              <p>Cambio de salidas AV, backlight, carcasas personalizadas</p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="bg-white p-3 rounded-3 shadow flex-fill">
+              <h5>📦 Restauración y limpieza</h5>
+              <p>Equipos y cartuchos retro, limpieza profesional</p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="bg-white p-3 rounded-3 shadow flex-fill">
+              <h5>💾 Instalación de software</h5>
+              <p>
+                Instalación de sistemas y software en consolas retro compatibles
+              </p>
+            </div>
+          </div>
+          <div class="col d-flex">
+            <div class="bg-white p-3 rounded-3 shadow flex-fill">
+              <h5>🧠 Asesoría personalizada</h5>
+              <p>Para coleccionistas y nuevos entusiastas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="destacados mb-5">
+        <h2 class="mb-4">🎮 Productos Destacados</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/wallhaven-0qox9d.jpg"
+                class="card-img-top"
+                alt="NES Classic"
+              />
+              <div class="card-body">
+                <h5 class="card-title">NES Classic</h5>
+                <p class="card-text">
+                  La consola que lo inició todo. ¡Revive los 80s!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/wallhaven-2ewddy.jpg"
+                class="card-img-top"
+                alt="Game Boy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Game Boy</h5>
+                <p class="card-text">
+                  Portabilidad y diversión en la palma de tu mano.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/wallhaven-45q553.jpg"
+                class="card-img-top"
+                alt="PlayStation 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Wii U</h5>
+                <p class="card-text">El salto a la era 3D. ¡Colecciónala!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2 id="titulo_contacto">Contacto</h2>
+            <p>
+              ¿Tienes preguntas? Ponte en contacto con nosotros
+              <a href="Pages/contacto.html" class="text-warning">AQUÍ</a>
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end mt-3 mt-md-0">
+            <p class="mb-0">2025 RetroStore. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

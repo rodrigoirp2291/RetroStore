@@ -1,0 +1,49 @@
+body {
+  background-color: #f8f0f7;
+}
+
+/* Títulos personalizados */
+.titulo_index,
+.titulo_articulos,
+.titulo_cursos {
+  color: #d1f728;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Imágenes principales */
+.tienda_img,
+.cursos_img {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Cards de artículos */
+.card-img-top {
+  object-fit: cover;
+  height: 220px;
+}
+
+/* Footer */
+footer {
+  font-style: italic;
+  text-align: center;
+}
+
+/* Ajustes para formularios (opcional, Bootstrap ya cubre la mayoría) */
+.formulario_contacto,
+.formulario_rastreo {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+}
+
+/* Ajustes para botones */
+.boton_rastreo,
+.boton_contacto {
+  min-height: 40px;
+  width: 100%;
+}
