@@ -1,23 +1,35 @@
+$color-bg: #f8f0f7;
+$color-title: #2ac025;
+$color-title-2: #f728a7;
+$color-form-bg: #fff;
+$border-radius-main: 25px;
+$border-radius-form: 16px;
+$box-shadow-main: 0 0 20px rgba(0, 0, 0, 0.15);
+$box-shadow-form: 0 2px 16px rgba(0, 0, 0, 0.08);
+
+// Fondo general con gradiente más suave
 body {
   background: linear-gradient(120deg, #f8f0f7 0%, #c2e9fb 100%);
   min-height: 100vh;
 }
 
+// Títulos personalizados con gradiente animado
 @keyframes colorChange {
   0% {
-    color: #2ac025;
+    color: $color-title;
   }
   50% {
-    color: #f728a7;
+    color: $color-title-2;
   }
   100% {
-    color: #2ac025;
+    color: $color-title;
   }
 }
+
 .titulo_index,
 .titulo_articulos,
 .titulo_cursos {
-  background: linear-gradient(90deg, #2ac025, #f728a7);
+  background: linear-gradient(90deg, $color-title, $color-title-2);
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -25,37 +37,43 @@ body {
   animation: colorChange 3s infinite;
 }
 
+// Imágenes principales
 .tienda_img,
 .cursos_img {
   max-width: 350px;
   max-height: 350px;
-  border-radius: 25px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: $border-radius-main;
+  box-shadow: $box-shadow-main;
 }
 
+// Cards de artículos
 .card-img-top {
   object-fit: cover;
   height: 220px;
   transition: transform 0.3s, box-shadow 0.3s;
-}
-.card-img-top:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  }
 }
 
+// Footer
 footer {
   font-style: italic;
   text-align: center;
 }
 
+// Ajustes para formularios
 .formulario_contacto,
 .formulario_rastreo {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
+  background: $color-form-bg;
+  border-radius: $border-radius-form;
+  box-shadow: $box-shadow-form;
   padding: 2rem;
 }
 
+// Ajustes para botones
 .boton_rastreo,
 .boton_contacto {
   min-height: 40px;
@@ -66,11 +84,11 @@ footer {
   border-radius: 25px;
   font-weight: bold;
   transition: background 0.3s, transform 0.2s;
-}
-.boton_rastreo:hover,
-.boton_contacto:hover {
-  background: linear-gradient(90deg, #f728a7 0%, #2ac025 100%);
-  transform: scale(1.05);
+
+  &:hover {
+    background: linear-gradient(90deg, #f728a7 0%, #2ac025 100%);
+    transform: scale(1.05);
+  }
 }
 
 @keyframes fadeInUp {
@@ -83,6 +101,7 @@ footer {
     transform: translateY(0);
   }
 }
+
 .card {
   background: linear-gradient(120deg, #ffffff 60%, #e0c3fc 100%);
   border-radius: 20px;
@@ -105,10 +124,9 @@ footer {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   }
 }
+
 .navbar {
   background: linear-gradient(90deg, #2ac025 0%, #f728a7 100%) !important;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   animation: navbarFadeInDown 1s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
-
-/*# sourceMappingURL=styles.css.map */
