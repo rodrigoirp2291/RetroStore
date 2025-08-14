@@ -1,9 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RetroStore</title>
+    <title>RetroStore - Tienda de Consolas Retro y Videojuegos Clásicos</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="RetroStore es tu tienda especializada en consolas retro, videojuegos clásicos y reparación de sistemas vintage. Nintendo, Sega, PlayStation y más. ¡Revive la nostalgia gamer!"
+    />
+    <meta
+      name="keywords"
+      content="consolas retro, videojuegos clásicos, Nintendo, Sega, PlayStation, reparación consolas, tienda retro, gaming vintage, NES, SNES, Game Boy"
+    />
+    <meta name="author" content="RetroStore" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://retrostore.com/" />
+    <meta
+      property="og:title"
+      content="RetroStore - Tienda de Consolas Retro y Videojuegos Clásicos"
+    />
+    <meta
+      property="og:description"
+      content="RetroStore es tu tienda especializada en consolas retro, videojuegos clásicos y reparación de sistemas vintage. ¡Revive la nostalgia gamer!"
+    />
+    <meta
+      property="og:image"
+      content="https://retrostore.com/Assets/img/tienda.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://retrostore.com/" />
+    <meta
+      property="twitter:title"
+      content="RetroStore - Tienda de Consolas Retro y Videojuegos Clásicos"
+    />
+    <meta
+      property="twitter:description"
+      content="RetroStore es tu tienda especializada en consolas retro, videojuegos clásicos y reparación de sistemas vintage. ¡Revive la nostalgia gamer!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://retrostore.com/Assets/img/tienda.png"
+    />
+
+    <!-- Datos Estructurados Schema.org -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Store",
+        "name": "RetroStore",
+        "description": "Tienda especializada en consolas retro, videojuegos clásicos y reparación de sistemas vintage",
+        "url": "https://retrostore.com",
+        "logo": "https://retrostore.com/Assets/img/tienda.png",
+        "sameAs": [
+          "https://facebook.com/retrostore",
+          "https://twitter.com/retrostore",
+          "https://instagram.com/retrostore"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Argentina"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Catálogo RetroStore",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Consolas Retro Nintendo",
+                "category": "Gaming Hardware"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Product",
+                "name": "Videojuegos Clásicos",
+                "category": "Gaming Software"
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
     <!-- Links de Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
@@ -11,7 +98,7 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="CCS/styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
   </head>
 
   <body>
@@ -100,7 +187,7 @@
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button class="btn btn-warning fw-bold" type="submit">
                 Search
               </button>
             </form>
@@ -108,11 +195,13 @@
         </div>
       </nav>
     </header>
-    <!-- Contenid0 Principal -->
+    <!-- Contenido Principal -->
     <main class="container my-5">
       <div class="row align-items-center mb-5">
-        <div class="col-md-7">
-          <h1 class="display-4 fw-bold mb-3 d-flex align-items-center gap-2">
+        <div class="col-md-7 scroll-animation">
+          <h1
+            class="display-4 fw-bold mb-3 d-flex align-items-center gap-2 titulo_index"
+          >
             Bienvenido a RetroStore
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -122,20 +211,21 @@
               stroke="currentColor"
               stroke-width="2"
               viewBox="0 0 24 24"
+              class="text-primary"
             >
               <path d="M3 9l1-4h16l1 4" />
               <path d="M5 9v10h14V9" />
               <path d="M9 22V12h6v10" />
             </svg>
           </h1>
-          <p class="lead">
+          <p class="lead text-muted">
             ¡Tu tienda de nostalgia, tecnología y cultura retro!
           </p>
         </div>
-        <div class="col-md-5 text-center">
+        <div class="col-md-5 text-center scroll-animation">
           <img
             src="Assets/img/tienda.png"
-            class="img-fluid rounded shadow"
+            class="img-fluid tienda_img"
             alt="RetroStore tienda"
           />
         </div>
